@@ -1,0 +1,81 @@
+@use "./mixins" as m;
+.tort-section {
+  background-color: #d9d9d980;
+  padding-bottom: 40px;
+}
+.ota-name {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  padding-block: 25px;
+}
+.ota {
+  @include m.flex-box;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.ota-box {
+  width: 160px;
+}
+.ota-box_img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.yozuvlar {
+  background-color: #03081f;
+  padding: 10px 15px;
+  color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.yozuvlar-str {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fc8a06;
+  margin: 0;
+}
+.yozuvlar-text {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+@media only screen and (min-width: 834px) {
+  .tort-section {
+    background-color: transparent;
+  }
+  .ota-box_img {
+    width: 160px;
+    height: 160px;
+  }
+  .ota {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .ota-name {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .ota-name {
+    font-size: 32px;
+    color: #000;
+  }
+  .ota {
+    overflow-x: hidden;
+  }
+  .ota-box {
+    width: 200px;
+  }
+  .yozuvlars {
+    padding: 10px 10px;
+  }
+  .ota-box_img {
+    width: 100%;
+    height: 160px;
+  }
+  .yozuvlar-str {
+    font-size: 18px;
+  }
+}

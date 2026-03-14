@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taqdimot 2</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header-box">
+      <div class="container">
+        <div class="header-boxs">
+          <a href="./index.html">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              class="header-box_logo logo"
+            />
+          </a>
+          <nav class="header-boxs_nav navbars" id="navbars">
+            <ul class="navbars-ul">
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">Home</a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site"
+                  >Browse Menu
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">
+                  Special Offers
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">
+                  Restaurants
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <a href="./index.html" class="navbars-ul_li__site">
+                  Track Order
+                </a>
+              </li>
+              <li class="navbars-ul_li">
+                <button
+                  class="nvabars-ul_li__btn header-btnss"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Login/Signup
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="nvabars-ul_li__btn header-btns"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Login/Signup
+          </button>
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Registr
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-bodys">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Check me out</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="header-boxs_btn header-btn" id="header-btn"></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="section-box">
+          <div class="section-box_box section-boxs">
+            <img src="./images/ayol.png" alt="ayol" class="section-boxs_img" />
+            <span class="section-boxs_span">Aycan</span>
+          </div>
+          <div class="section-box_box section-boxs">
+            <img
+              src="./images/musor.png"
+              alt="ayol"
+              class="section-boxs_imgs"
+            />
+            <span class="section-boxs_spans">GBP 79.89</span>
+          </div>
+        </div>
+      </section>
+      <section class="ikki-section">
+        <div class="container">
+          <div class="main-box">
+            <p class="main-box_text">Lution Street, N4G-00....</p>
+          </div>
+          <div class="ikki-box">
+            <div class="ikki-box_box ikki-quti">
+              <p class="ikki-box_text">
+                Order Restaurant food, takeaway and groceries.
+              </p>
+              <h1 class="ikki-box_name">
+                Feast Your Senses,
+                <br />
+                <span class="ikki-box_name__span">Fast and Fresh</span>
+              </h1>
+              <div class="ikki-box_box search">
+                <p class="search-text">
+                  Enter a postcode to see what we deliver
+                </p>
+                <div class="search-box">
+                  <input
+                    class="search-box_int search-int"
+                    type="text"
+                    placeholder="e.g. EC4R 3TE"
+                  />
+                  <button class="search-box_btn search-btn">
+                    <img src="./images/next.png" alt="next" class="btn-img" />
+                  </button>
+                  <button class="search-box_btn search-btns">Search</button>
+                </div>
+              </div>
+            </div>
+            <img class="ikki-box_img" src="./images/girls.png" alt="girl" />
+            <img class="ikki-box_imgs" src="./images/girl.png" alt="girl" />
+            <div class="ikki-box_box quticha">
+              <ul class="quticha-ul">
+                <li class="quticha-ul_li">
+                  <img
+                    class="quticha-ul_li__img"
+                    src="./images/logo.svg"
+                    alt="logo"
+                  />
+                  <strong class="quticha-ul_li__str"
+                    >We’ve Received your order!</strong
+                  >
+                  <span class="quticha-ul_li__span"
+                    >Awaiting Restaurant acceptance
+                  </span>
+                  <span class="quticha-ul_li__spans">now</span>
+                </li>
+                <li class="quticha-ul_li">
+                  <img
+                    class="quticha-ul_li__img"
+                    src="./images/logo.svg"
+                    alt="logo"
+                  />
+                  <strong class="quticha-ul_li__str">Order Accepted!✅</strong>
+                  <span class="quticha-ul_li__span"
+                    >Your order will be delivered shortly
+                  </span>
+                  <span class="quticha-ul_li__spans">now</span>
+                </li>
+                <li class="quticha-ul_li">
+                  <img
+                    class="quticha-ul_li__img"
+                    src="./images/logo.svg"
+                    alt="logo"
+                  />
+                  <strong class="quticha-ul_li__str"
+                    >Your rider`s nearby🎉</strong
+                  >
+                  <span class="quticha-ul_li__span"
+                    >Awaiting Restaurant acceptance
+                  </span>
+                  <span class="quticha-ul_li__spans">now</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="uch-section">
+        <div class="container">
+          <div class="uch-box">
+            <h2 class="uch-box_name">Up to -40% Discount Offers 🎊</h2>
+            <button class="uch-box_btn">Pizza & Fast Food</button>
+          </div>
+          <div class="cardlar">
+            <div class="cardlar-box">
+              <img
+                class="cardlar-box_img"
+                src="./images/burger.png"
+                alt="burger"
+              />
+              <span class="cardlar-box_span">Restaurant</span>
+              <p class="cardlar-box_text">Butterbrot Caf’e London</p>
+              <span class="cardlar-box_spans price">-17%</span>
+            </div>
+            <div class="cardlar-box">
+              <img
+                class="cardlar-box_img"
+                src="./images/steyk.png"
+                alt="burger"
+              />
+              <span class="cardlar-box_span">Restaurant</span>
+              <p class="cardlar-box_text texts">Grand Caf’e</p>
+              <span class="cardlar-box_spans price">-17%</span>
+            </div>
+            <div class="cardlar-box">
+              <img
+                class="cardlar-box_img"
+                src="./images/hamburger.png"
+                alt="burger"
+              />
+              <span class="cardlar-box_span">Restaurant</span>
+              <p class="cardlar-box_text text">Butterbrot Caf’e London</p>
+              <span class="cardlar-box_spans price">-17%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tort-section">
+        <div class="container">
+          <h3 class="ota-name">Order.Uk’s Popular Categories🤩</h3>
+          <div class="ota">
+            <div class="ota-box">
+              <img class="ota-box_img" src="./images/1.png" alt="ovqatlar" />
+              <div class="ota-box_box yozuvlar yozuvlars">
+                <strong class="yozuvlar-str">Burgers & Fast food</strong>
+                <p class="yozuvlar-text">21 Restaurants</p>
+              </div>
+            </div>
+            <div class="ota-box">
+              <img class="ota-box_img" src="./images/2.png" alt="ovqatlar" />
+              <div class="ota-box_box yozuvlar">
+                <strong class="yozuvlar-str">Salads</strong>
+                <p class="yozuvlar-text">32 Restaurants</p>
+              </div>
+            </div>
+            <div class="ota-box">
+              <img class="ota-box_img" src="./images/3.png" alt="ovqatlar" />
+              <div class="ota-box_box yozuvlar">
+                <strong class="yozuvlar-str">Pasta & Casuals</strong>
+                <p class="yozuvlar-text">4 Restaurants</p>
+              </div>
+            </div>
+            <div class="ota-box">
+              <img class="ota-box_img" src="./images/4.png" alt="ovqatlar" />
+              <div class="ota-box_box yozuvlar">
+                <strong class="yozuvlar-str">Pizza</strong>
+                <p class="yozuvlar-text">32 Restaurants</p>
+              </div>
+            </div>
+            <div class="ota-box">
+              <img class="ota-box_img" src="./images/5.png" alt="ovqatlar" />
+              <div class="ota-box_box yozuvlar">
+                <strong class="yozuvlar-str">Breakfast</strong>
+                <p class="yozuvlar-text">4 Restaurants</p>
+              </div>
+            </div>
+            <div class="ota-box">
+              <img class="ota-box_img" src="./images/6.png" alt="ovqatlar" />
+              <div class="ota-box_box yozuvlar">
+                <strong class="yozuvlar-str">Soups</strong>
+                <p class="yozuvlar-text">32 Restaurants</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="besh-section">
+        <div class="container">
+          <h3 class="ota-name">Similar Restaurants</h3>
+          <div class="otas">
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/mcdonals.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span">McDonald’s London</p>
+            </div>
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/papajohns.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span spans">Papa Johns</p>
+            </div>
+            <div class="ota-bola">
+              <img class="ota-bola_img" src="./images/kfc.png" alt="brends" />
+              <p class="ota-bola_span">KFC West London</p>
+            </div>
+            <div class="ota-bola">
+              <img class="ota-bola_img" src="./images/texas.png" alt="brends" />
+              <p class="ota-bola_span">Texas Chicken</p>
+            </div>
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/burger-king.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span spans">Burger King</p>
+            </div>
+            <div class="ota-bola">
+              <img
+                class="ota-bola_img"
+                src="./images/shaurma.png"
+                alt="brends"
+              />
+              <p class="ota-bola_span spans">Shaurma 1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="olti-section">
+        <div class="container">
+          <div class="bola">
+            <div class="bola-box">
+              <div class="bola-box_box boxlar">
+                <a class="boxlar-site" href="./index.html">
+                  <img
+                    class="boxlar-site_img"
+                    src="./images/logo.svg"
+                    alt="logo"
+                  />
+                  <img
+                    class="boxlar-site_img"
+                    src="./images/ing.png"
+                    alt="ing"
+                  />
+                </a>
+                <p class="boxlar-text">is more</p>
+              </div>
+              <p class="bola-box_texts">
+                <span class="bola-box_text__span">Personalised</span>
+                & Instant
+              </p>
+              <p class="bola-box_textss">
+                Download the Order.uk app for faster ordering
+              </p>
+              <div class="bola-box_box btn-box">
+                <button class="btn-box_btn">
+                  <img src="./images/yozuvlar.png" alt="text" />
+                </button>
+                <button class="btn-box_btns"></button>
+              </div>
+            </div>
+            <img src="./images/family.png" alt="family" class="bola-img" />
+            <img src="./images/family-2.png" alt="family" class="bola-imgs" />
+          </div>
+          <div class="katta-ota">
+            <div class="bolas">
+              <div class="bolas-box">
+                <span class="bolas-box_span">Signup as a business</span>
+                <h4 class="bolas-box_name">Partner with us</h4>
+                <button class="bolas-box_btn">Get Started</button>
+              </div>
+              <span class="bolas-span">Earn more with lower fees</span>
+            </div>
+            <div class="bolas bolass">
+              <div class="bolas-box">
+                <span class="bolas-box_span">Signup as a rider</span>
+                <h4 class="bolas-box_name">Ride with us</h4>
+                <button class="bolas-box_btn">Get Started</button>
+              </div>
+              <span class="bolas-span">Avail exclusive perks</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="yetti-section">
+        <div class="container">
+          <h3 class="card-name">Know more about us!</h3>
+          <div class="yetti-box">
+            <div class="yetti-box_box card">
+              <button class="card-btn">How does Order.UK work?</button>
+              <p class="card-text">What payment methods are accepted?</p>
+              <p class="card-text">Can I track my order in real-time?</p>
+              <p class="card-text">
+                Are there any special discounts orpromotions available?
+              </p>
+              <p class="card-text">Is Order.UK available in my area?</p>
+            </div>
+            <div class="cards">
+              <ul class="cards-ul">
+                <li class="cards-ul_li">
+                  <strong class="cards-ul_li__str">Place an Order!</strong>
+                  <img
+                    src="./images/111.png"
+                    alt="imgs"
+                    class="cards-ul_li__img"
+                  />
+                  <p class="cards-ul_li__text">
+                    Place order through our website or Mobile app
+                  </p>
+                </li>
+                <li class="cards-ul_li">
+                  <strong class="cards-ul_li__str">Track Progress</strong>
+                  <img
+                    src="./images/222.png"
+                    alt="imgs"
+                    class="cards-ul_li__img"
+                  />
+                  <p class="cards-ul_li__text">
+                    Your can track your order status with delivery time
+                  </p>
+                </li>
+                <li class="cards-ul_li">
+                  <strong class="cards-ul_li__str">Get your Order!</strong>
+                  <img
+                    src="./images/333.png"
+                    alt="imgs"
+                    class="cards-ul_li__img"
+                  />
+                  <p class="cards-ul_li__text">
+                    Receive your order at a lighting fast speed!
+                  </p>
+                </li>
+              </ul>
+              <p class="cards-text">
+                Order.UK simplifies the food ordering process. Browse through
+                our diverse menu, select your favorite dishes, and proceed to
+                checkout. Your delicious meal will be on its way to your
+                doorstep in no time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sakkiz-section">
+        <div class="container">
+          <div class="sakkiz-box">
+            <div class="sakkiz-box_box wrap">
+              <h3 class="wrap-name">
+                546+
+                <span class="wrap-name_span">Registered Riders</span>
+              </h3>
+            </div>
+            <div class="sakkiz-box_box wrap">
+              <h3 class="wrap-name">
+                789,900+
+                <span class="wrap-name_span">Orders Delivered</span>
+              </h3>
+            </div>
+            <div class="sakkiz-box_box wrap">
+              <h3 class="wrap-name">
+                690+
+                <span class="wrap-name_span">Restaurants Partnered</span>
+              </h3>
+            </div>
+            <div class="sakkiz-box_box wrap">
+              <h3 class="wrap-name">
+                17,457+
+                <span class="wrap-name_span">Food items</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-box">
+      <div class="container">
+        <div class="footer-boxs">
+          <div class="foooetr-box_box wrapper">
+            <a class="wrapper-site" href="./index.html">
+              <img
+                class="wrapper-site_img"
+                src="./images/logo 2.svg"
+                alt="logo"
+              />
+            </a>
+            <div class="footer-boxs_box footer-card">
+              <button class="footer-card_btn">
+                <img src="./images/yozuvlar.png" alt="text" />
+              </button>
+              <button class="footer-card_btns"></button>
+            </div>
+            <span class="wrapper-span"
+              >Company # 490039-445, Registered with House of companies.</span
+            >
+          </div>
+          <div class="bro">
+            <ul class="bro-ul">
+              <li class="bro-ul_li">
+                <strong class="bro-ul_li__str"
+                  >Get Exclusive Deals in your Inbox</strong
+                >
+                <form class="bro-ul_li__box registr">
+                  <input
+                    type="email"
+                    class="register-int"
+                    placeholder="youremail@gmail.com"
+                  />
+                  <button class="register-btn">Subscribe</button>
+                </form>
+                <p class="bro-ul_li__text">
+                  we wont spam, read our
+                  <span class="bro-ul_li__text__span">email policy</span>
+                </p>
+                <ul class="bro-ul_li_ul programs-ul">
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn"></button>
+                  </li>
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn bts"></button>
+                  </li>
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn btnss"></button>
+                  </li>
+                  <li class="programs-ul_li">
+                    <button class="programs-ul_li__btn btnsss"></button>
+                  </li>
+                </ul>
+              </li>
+              <li class="bro-ul_li">
+                <strong class="bro-ul_li__str">Legal Pages</strong>
+                <ul class="bro-ul_li__ul pages-ul">
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html"
+                      >Terms and conditions
+                    </a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">Privacy</a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">Cookies</a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html"
+                      >Modern Slavery Statement</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="bro-ul_li">
+                <strong class="bro-ul_li__str">Important Links</strong>
+                <ul class="bro-ul_li__ul pages-ul">
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">Get help</a>
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html"
+                      >Add your restaurant</a
+                    >
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">
+                      Sign up to deliver</a
+                    >
+                  </li>
+                  <li class="pages-ul_li">
+                    <a class="pages-ul_li__ite" href="./index.html">
+                      Create a business account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-boxs_box brat">
+        <div class="container">
+          <div class="brat-box">
+            <p class="brat-box_text">
+              Order.uk Copyright 2024, All Rights Reserved.
+            </p>
+            <ul class="brat-box_ul brat-ul">
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">Privacy Policy</p>
+              </li>
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">Terms</p>
+              </li>
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">Pricing</p>
+              </li>
+              <li class="brat-ul_li">
+                <p class="brat-ul_li__text">
+                  Do not sell or share my personal information
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</html>

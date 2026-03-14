@@ -1,0 +1,253 @@
+@use "./mixins" as m;
+.olti-section {
+  padding-bottom: 40px;
+}
+.bola {
+  @include m.grid-box(20px);
+  background: linear-gradient(180deg, #eeeeee 0%, #e0e1dc 100%);
+  border-radius: 12px;
+  padding-top: 55px;
+  padding-inline: 20px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.bola-box {
+  @include m.grid-box(0px);
+  text-align: center;
+}
+.boxlar-site {
+  @include m.flex-boxs(0px);
+}
+.boxlar-site_img {
+  height: 30px;
+}
+.boxlar-site_img:nth-child(1) {
+  width: 110px;
+}
+.boxlar-site_img:nth-child(2) {
+  margin-top: 10px;
+  width: 40px;
+}
+.boxlar {
+  @include m.flex-boxs(12px);
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+.boxlar-text {
+  font-weight: 700;
+  font-size: 32px;
+  color: #03081f;
+  margin: 0;
+}
+.bola-box_texts {
+  font-weight: 500;
+  font-size: 24px;
+  color: #03081f;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.bola-box_textss {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.bola-img {
+  width: 100%;
+  z-index: 1;
+}
+.btn-box {
+  @include m.flex-boxs(2px);
+  border: 0.2px solid #ffffff;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.btn-box_btn {
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  background-color: #000;
+  padding-top: 5px;
+}
+.btn-box_btns {
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  @include m.background(url("../images/playmarket.png"));
+}
+.bola-imgs {
+  width: 295px;
+  z-index: 0;
+  left: 10px;
+  opacity: 20%;
+  position: absolute;
+  bottom: 0;
+}
+.bolas {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  width: 100%;
+  @include m.background(url("../images/cooker.png"));
+  border-radius: 5px;
+  position: relative;
+  object-fit: cover;
+}
+.bolass {
+  margin-top: 30px;
+  @include m.background(url("../images/delivery.png"));
+}
+.bolas-box {
+  width: 200px;
+}
+.bolas-box_span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fc8a06;
+  margin-bottom: 2px;
+}
+.bolas-box_name {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.bolas-box_btn {
+  border: none;
+  border-radius: 120px;
+  padding: 6px 30px;
+  background-color: #fc8a06;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #fc8a06;
+  }
+}
+.bolas-span {
+  position: absolute;
+  top: 0;
+  color: #03081f;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 27px;
+  background-color: #fff;
+  left: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media only screen and (min-width: 834px) {
+  .bola {
+    @include m.flex-box;
+    flex-direction: row-reverse;
+    gap: 0;
+    padding-top: 0px;
+  }
+  .bola-img {
+    width: 400px;
+  }
+  .bola-imgs {
+    width: 410px;
+    left: 10px;
+  }
+  .boxlar {
+    margin-bottom: 10px;
+  }
+  .boxlar-site_img:nth-child(1) {
+    width: 150px;
+  }
+  .bola-box_texts {
+    background-color: #03081f;
+    color: #fff;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding-block: 1px;
+  }
+  .bola-box_text__span {
+    color: #fc8a06;
+    border-bottom: 2px solid #fc8a06;
+  }
+  .bola-box_textss {
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .bolas-box_btn {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .katta-ota {
+    @include m.flex-boxs(20px);
+  }
+  .bolass {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .bola {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  .bola-img {
+    width: 650px;
+  }
+  .bola-imgs {
+    width: 670px;
+  }
+  .boxlar {
+    margin: 0;
+  }
+  .boxlar-site_img:nth-child(1) {
+    width: 200px;
+    height: 50px;
+  }
+  .boxlar-site_img:nth-child(2) {
+    width: 70px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .boxlar-text {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .bola-box_texts {
+    font-size: 40px;
+    width: 500px;
+    margin-top: 10px;
+  }
+  .bola-box_textss {
+    font-size: 24px;
+    margin-block: 30px;
+  }
+  .katta-ota {
+    @include m.flex-boxs(20px);
+  }
+  .bolas {
+    padding-top: 140px;
+    height: 320px;
+    border-radius: 12px;
+  }
+  .bolas-span {
+    left: 80px;
+    padding: 10px 27px;
+  }
+  .bolas-box {
+    padding-left: 50px;
+    width: 400px;
+  }
+  .bolas-box_span {
+    font-size: 18px;
+  }
+  .bolas-box_name {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+  .bolas-box_btn {
+    width: 180px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,150 @@
+@use "./mixins" as m;
+.uch-box {
+  @include m.flex-box;
+}
+.uch-box_name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.uch-box_btn {
+  @include m.flex-boxs(10px);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 120px;
+  border: 1px solid #03081f;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 12px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    @include m.background(url("../images/bottom.png"));
+  }
+}
+.cardlar {
+  @include m.flex-boxs(15px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+}
+.cardlar-box {
+  width: 150px;
+  position: relative;
+}
+.cardlar-box_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.cardlar-box_span {
+  color: #fc8a06;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+.cardlar-box_text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #03081f;
+  margin: 0;
+}
+.price {
+  position: absolute;
+  width: 46px;
+  height: 38px;
+  background-color: #03081f;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 7px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  top: 0;
+  left: 85px;
+  color: #fff;
+}
+.texts {
+  margin: 0;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 834px) {
+  .uch-box_name {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .uch-box_btn {
+    width: 200px;
+    font-size: 16px;
+  }
+  .cardlar-box {
+    width: 250px;
+  }
+  .cardlar-box_img {
+    width: 100%;
+    height: 160px;
+    margin: 0;
+  }
+  .texts {
+    margin: 0;
+  }
+  .price {
+    left: 190px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .cardlar-box_span {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+  }
+  .cardlar-box_text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .uch-box_name {
+    font-size: 32px;
+    color: #000;
+  }
+  .cardlar {
+    overflow-x: hidden;
+    @include m.flex-boxs(20px);
+    margin: 0 auto;
+    margin-block: 20px;
+  }
+  .cardlar-box {
+    width: 400px;
+    height: 250px;
+  }
+  .cardlar-box_img {
+    width: 100%;
+    height: 100%;
+  }
+  .cardlar-box_span {
+    font-size: 18px;
+    bottom: 60px;
+  }
+  .cardlar-box_text {
+    font-size: 24px;
+    bottom: 30px;
+  }
+  .price {
+    left: 300px;
+    width: 80px;
+    height: 60px;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
